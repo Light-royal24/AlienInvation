@@ -1,0 +1,29 @@
+Reviewing the Project
+    When you’re beginning a new phase of development on a large project, it’s
+    always a good idea to revisit your plan and clarify what you want to accomplish with the code you’re about to write. In this chapter, we’ll:
+    •	 Examine our code and determine if we need to refactor before implementing new features.
+    •	 Add a single alien to the top-left corner of the screen with appropriate
+    spacing around it.
+    •	 Use the spacing around the first alien and the overall screen size to
+    determine how many aliens can fit on the screen. We’ll write a loop to
+    create aliens to fill the upper portion of the screen.
+    •	 Make the fleet move sideways and down until the entire fleet is shot
+    down, an alien hits the ship, or an alien reaches the ground. If the
+    entire fleet is shot down, we’ll create a new fleet. If an alien hits the
+    ship or the ground, we’ll destroy the ship and create a new fleet.
+    •	 Limit the number of ships the player can use, and end the game when
+    the player has used up the allotted number of ships.
+    We’ll refine this plan as we implement features, but this is sufficient to
+    start with.
+    You should also review your existing code when you begin working
+    on a new series of features in a project. Because each new phase typically
+    makes a project more complex, it’s best to clean up any cluttered or inefficient code. We’ve been refactoring as we go, so there isn’t any code that we
+    need to refactor at this point.
+Creating the First Alien
+    Placing one alien on the screen is like placing a ship on the screen. Each
+    alien’s behavior is controlled by a class called Alien, which we’ll structure
+    like the Ship class. We’ll continue using bitmap images for simplicity. You can
+    find your own image for an alien or use the one shown in Figure 13-1, which
+    is available in the book’s resources at https://nostarch.com/pythoncrashcourse2e/.
+    This image has a gray background, which matches the screen’s background
+    color. Make sure you save the image file you choose in the images folder.
